@@ -1,7 +1,7 @@
 import React from 'react';
 import logo from './logo.svg';
-import './App.css';
 import BaseUseDemo from './components/baseUse';
+import './App.css';
 
 function App() {
   return (
@@ -18,8 +18,8 @@ function App() {
           rel="noopener noreferrer"
         >
           Learn React
-          <BaseUseDemo />
         </a>
+        <BaseUseDemo />
       </header>
     </div>
   );
