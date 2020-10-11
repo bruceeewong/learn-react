@@ -51,6 +51,26 @@ List.propTypes = {
   items: PropTypes.arrayOf(PropTypes.object).isRequired,
 };
 
+class Footer extends React.Component {
+  componentDidUpdate() {
+    console.log('footer did update');
+  }
+  shouldComponentUpdate(nextProps) {
+    if (nextProps.text === this.props.text) {
+      return false; // 不重新渲染
+    }
+    return true; // 重新渲染
+  }
+
+  render() {
+    return <p>{this.props.text}</p>;
+  }
+}
+
+Footer.propTypes = {
+  text: PropTypes.string.isRequired,
+};
+
 class TodoList extends React.Component {
   constructor(props) {
     super(props);
@@ -77,6 +97,7 @@ class TodoList extends React.Component {
       <div>
         <Input value={this.state.value} onChange={this.onChange}></Input>
         <List items={this.state.items}></List>
+        <Footer text="底部文字" />
       </div>
     );
   }

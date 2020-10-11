@@ -21,7 +21,7 @@ class StateDemo extends React.Component {
 
     setTimeout(() => {
       this.setState({
-        count: this.state.count + 1,
+        count: this.state.count + 1, // SCU
       });
       console.log('count by setTimeout', this.state.count); // after update
     }, 0);
