@@ -1,9 +1,11 @@
 import React from 'react';
-import UncontrolledFormComponent from './UncontrolledFormComponent';
+// import UncontrolledFormComponent from './UncontrolledFormComponent';
+import Modal from './PortalsDemo';
 
 const BaseUseDemo = () => (
   <>
-    <UncontrolledFormComponent />
+    {/* <UncontrolledFormComponent /> */}
+    <Modal>Hello World</Modal>
   </>
 );
 
