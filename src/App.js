@@ -1,7 +1,7 @@
 import React from 'react';
 import logo from './logo.svg';
-import BaseUseDemo from './components/baseUse';
-// import AdvancedUseDemo from './components/advancedUse';
+// import BaseUseDemo from './components/baseUse';
+import AdvancedUseDemo from './components/advancedUse';
 import './App.css';
 
 function App() {
@@ -20,8 +20,8 @@ function App() {
         >
           Learn React
         </a>
-        <BaseUseDemo />
-        {/* <AdvancedUseDemo /> */}
+        {/* <BaseUseDemo /> */}
+        <AdvancedUseDemo />
       </header>
     </div>
   );
