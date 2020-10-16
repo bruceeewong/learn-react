@@ -25,7 +25,8 @@ class EventDemo extends React.Component {
     console.log('target: ', e.target);
     console.log('currentTarget: ', e.currentTarget);
     console.log('event: ', e);
-    console.log('event constructor: ', e.__proto__.constructor);
+    console.log('event constructor: ', e.__proto__.constructor); // MouseEvent
+    // 原生事件
     console.log('event nativeEvent: ', e.nativeEvent);
     console.log('event nativeEvent: ', e.nativeEvent.target);
     console.log('event nativeEvent: ', e.nativeEvent.currentTarget);
